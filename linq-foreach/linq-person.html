@@ -1,0 +1,257 @@
+<HTML>
+<HEAD>
+<TITLE> linq-person.exe - IL DASM</TITLE>
+</HEAD>
+<BODY>
+<FONT SIZE=3 FACE="Arial">
+<PRE>
+
+<FONT SIZE=4><B>
+<I><FONT COLOR=GREEN>//  Microsoft (R) .NET Framework IL Disassembler.  Version 4.8.3928.0</FONT></I>
+<I><FONT COLOR=GREEN>//  Copyright (c) Microsoft Corporation.  All rights reserved.</FONT></I>
+</B></FONT>
+
+<I><FONT COLOR=GREEN>
+</FONT></I>
+// Metadata version: v4.0.30319
+<B><FONT COLOR=NAVY>.assembly extern</FONT></B> <A NAME=A23000001>mscorlib</A>
+{
+  <B><FONT COLOR=NAVY>.publickeytoken</FONT></B> = (B7 7A 5C 56 19 34 E0 89 )                         <I><FONT COLOR=GREEN>// .z\V.4..</FONT></I>
+  <B><FONT COLOR=NAVY>.ver</FONT></B> 4:0:0:0
+}
+<B><FONT COLOR=NAVY>.assembly extern</FONT></B> <A NAME=A23000002>System.Core</A>
+{
+  <B><FONT COLOR=NAVY>.publickeytoken</FONT></B> = (B7 7A 5C 56 19 34 E0 89 )                         <I><FONT COLOR=GREEN>// .z\V.4..</FONT></I>
+  <B><FONT COLOR=NAVY>.ver</FONT></B> 4:0:0:0
+}
+<B><FONT COLOR=NAVY>.assembly</FONT></B> <A NAME=A20000001>'linq-person'</A>
+{
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(<B><FONT COLOR=NAVY>int32</FONT></B>) = ( 01 00 08 00 00 00 00 00 ) 
+  <B><FONT COLOR=NAVY>.custom</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor() = ( 01 00 01 00 54 02 16 57 72 61 70 4E 6F 6E 45 78 <I><FONT COLOR=GREEN>  // ....T..WrapNonEx</FONT></I>
+                                                                                                                                                                                                                                                                63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       <I><FONT COLOR=GREEN>// ceptionThrows.</FONT></I>
+<I><FONT COLOR=GREEN>
+  // --- The following custom attribute is added automatically, do not uncomment -------
+  //  <B><FONT COLOR=NAVY>.custom</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Diagnostics.DebuggableAttribute::.ctor(<B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 07 01 00 00 00 00 ) 
+</FONT></I>
+  <B><FONT COLOR=NAVY>.hash algorithm</FONT></B> 0x00008004
+  <B><FONT COLOR=NAVY>.ver</FONT></B> 0:0:0:0
+}
+<B><FONT COLOR=NAVY>.module</FONT></B> 'linq-person.exe'
+<I><FONT COLOR=GREEN>// MVID: {C9800CA3-CEB3-4BD9-87AE-153B77EF4425}</FONT></I>
+<B><FONT COLOR=NAVY>.imagebase</FONT></B> 0x00400000
+<B><FONT COLOR=NAVY>.file alignment</FONT></B> 0x00000200
+<B><FONT COLOR=NAVY>.stackreserve</FONT></B> 0x00100000
+<B><FONT COLOR=NAVY>.subsystem</FONT></B> 0x0003       <I><FONT COLOR=GREEN>// WINDOWS_CUI</FONT></I>
+<B><FONT COLOR=NAVY>.corflags</FONT></B> 0x00000001<I><FONT COLOR=GREEN>    //  ILONLY</FONT></I>
+<I><FONT COLOR=GREEN>// Image base: 0x00AF0000</FONT></I>
+
+
+<I><FONT COLOR=GREEN>// =============== CLASS MEMBERS DECLARATION ===================</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <B><FONT COLOR=NAVY>private auto ansi beforefieldinit </FONT></B><A NAME=A02000002>Person</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Object
+{
+  <A NAME=A04000001><B><FONT COLOR=NAVY>.field</FONT></B></A> <B><FONT COLOR=NAVY>public </FONT></B><B><FONT COLOR=NAVY>int32</FONT></B> _Height
+  <A NAME=A04000002><B><FONT COLOR=NAVY>.field</FONT></B></A> <B><FONT COLOR=NAVY>public </FONT></B><B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime _DOB
+  <A NAME=A04000003><B><FONT COLOR=NAVY>.field</FONT></B></A> <B><FONT COLOR=NAVY>public </FONT></B><B><FONT COLOR=NAVY>string</FONT></B> _Name
+  <A NAME=A06000001><B><FONT COLOR=NAVY>.method</FONT></B></A> <B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor(<B><FONT COLOR=NAVY>int32</FONT></B> Height,
+                <B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime DOB,
+                <B><FONT COLOR=NAVY>string</FONT></B> Name)<B><FONT COLOR=NAVY> cil managed</FONT></B>
+  {
+    // Code size       30 (0x1e)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Object::.ctor()
+    IL_0006:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0007:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0008:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0009:  <B><FONT COLOR=NAVY>ldarg.2</FONT></B>
+    IL_000a:  <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime <A HREF=#A02000002>Person</A>::<A HREF=#A04000002>_DOB</A>
+    IL_000f:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0010:  <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+    IL_0011:  <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A04000001>_Height</A>
+    IL_0016:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0017:  <B><FONT COLOR=NAVY>ldarg.3</FONT></B>
+    IL_0018:  <B><FONT COLOR=NAVY>stfld</FONT></B> <B><FONT COLOR=NAVY>string</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A04000003>_Name</A>
+    IL_001d:  <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Person::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+  <A NAME=A06000002><B><FONT COLOR=NAVY>.method</FONT></B></A> <B><FONT COLOR=NAVY>public hidebysig virtual </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>string</FONT></B>  ToString()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+  {
+    // Code size       44 (0x2c)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  4
+    <B><FONT COLOR=NAVY>.locals </FONT></B><B><FONT COLOR=NAVY>init </FONT></B>(<B><FONT COLOR=NAVY>string</FONT></B> V_0)
+    IL_0000:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0001:  <B><FONT COLOR=NAVY>ldstr</FONT></B> "Name: {0}; Height: {1}; Date of Birth: {2}"
+    IL_0006:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0007:  <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>string</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A04000003>_Name</A>
+    IL_000c:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_000d:  <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A04000001>_Height</A>
+    IL_0012:  <B><FONT COLOR=NAVY>box</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Int32
+    IL_0017:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0018:  <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime <A HREF=#A02000002>Person</A>::<A HREF=#A04000002>_DOB</A>
+    IL_001d:  <B><FONT COLOR=NAVY>box</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.DateTime
+    IL_0022:  <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>string</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.String::Format(<B><FONT COLOR=NAVY>string</FONT></B>,
+                                                                                                                                                                              <B><FONT COLOR=NAVY>object</FONT></B>,
+                                                                                                                                                                              <B><FONT COLOR=NAVY>object</FONT></B>,
+                                                                                                                                                                              <B><FONT COLOR=NAVY>object</FONT></B>)
+    IL_0027:  <B><FONT COLOR=NAVY>stloc.0</FONT></B>
+    IL_0028:  <B><FONT COLOR=NAVY>br.s</FONT></B> IL_002a
+
+    IL_002a:  <B><FONT COLOR=NAVY>ldloc.0</FONT></B>
+    IL_002b:  <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Person::</FONT></I><I><FONT COLOR=GREEN>ToString</FONT></I>
+
+} <I><FONT COLOR=GREEN>// end of class Person</FONT></I>
+
+<B><FONT COLOR=NAVY>.class</FONT></B> <B><FONT COLOR=NAVY>private auto ansi beforefieldinit </FONT></B><A NAME=A02000003>Program</A>
+       <B><FONT COLOR=NAVY>extends</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Object
+{
+  <B><FONT COLOR=NAVY>.class</FONT></B> <B><FONT COLOR=NAVY>auto ansi serializable sealed nested private beforefieldinit </FONT></B><A NAME=A02000004>'&lt;&gt;c'</A>
+         <B><FONT COLOR=NAVY>extends</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Object
+  {
+    <B><FONT COLOR=NAVY>.custom</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+    <A NAME=A04000004><B><FONT COLOR=NAVY>.field</FONT></B></A> <B><FONT COLOR=NAVY>public static initonly </FONT></B><B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A> '&lt;&gt;9'
+    <A NAME=A04000005><B><FONT COLOR=NAVY>.field</FONT></B></A> <B><FONT COLOR=NAVY>public static </FONT></B><B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Func`2&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>,<B><FONT COLOR=NAVY>bool</FONT></B>&gt; '&lt;&gt;9__0_0'
+    <A NAME=A06000005><B><FONT COLOR=NAVY>.method</FONT></B></A> <B><FONT COLOR=NAVY>private hidebysig specialname rtspecialname static </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B>  .cctor()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+    {
+      // Code size       11 (0xb)
+      <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+      IL_0000:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A>::<A HREF=#A06000006>.ctor</A>()
+      IL_0005:  <B><FONT COLOR=NAVY>stsfld</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A> <A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A>::<A HREF=#A04000004>'&lt;&gt;9'</A>
+      IL_000a:  <B><FONT COLOR=NAVY>ret</FONT></B>
+    } <I><FONT COLOR=GREEN>// end of method '&lt;&gt;c'::</FONT></I><I><FONT COLOR=GREEN>.cctor</FONT></I>
+
+    <A NAME=A06000006><B><FONT COLOR=NAVY>.method</FONT></B></A> <B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+            .ctor()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+    {
+      // Code size       8 (0x8)
+      <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+      IL_0000:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+      IL_0001:  <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Object::.ctor()
+      IL_0006:  <B><FONT COLOR=NAVY>nop</FONT></B>
+      IL_0007:  <B><FONT COLOR=NAVY>ret</FONT></B>
+    } <I><FONT COLOR=GREEN>// end of method '&lt;&gt;c'::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+    <A NAME=A06000007><B><FONT COLOR=NAVY>.method</FONT></B></A> <B><FONT COLOR=NAVY>assembly hidebysig </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>bool</FONT></B>  '&lt;Main&gt;b__0_0'(<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A> p)<B><FONT COLOR=NAVY> cil managed</FONT></B>
+    {
+      // Code size       17 (0x11)
+      <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+      IL_0000:  <B><FONT COLOR=NAVY>ldarg.1</FONT></B>
+      IL_0001:  <B><FONT COLOR=NAVY>ldfld</FONT></B> <B><FONT COLOR=NAVY>int32</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A04000001>_Height</A>
+      IL_0006:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0xb4
+      IL_000b:  <B><FONT COLOR=NAVY>clt</FONT></B>
+      IL_000d:  <B><FONT COLOR=NAVY>ldc.i4.0</FONT></B>
+      IL_000e:  <B><FONT COLOR=NAVY>ceq</FONT></B>
+      IL_0010:  <B><FONT COLOR=NAVY>ret</FONT></B>
+    } <I><FONT COLOR=GREEN>// end of method '&lt;&gt;c'::</FONT></I><I><FONT COLOR=GREEN>'&lt;Main&gt;b__0_0'</FONT></I>
+
+  } <I><FONT COLOR=GREEN>// end of class '&lt;&gt;c'</FONT></I>
+
+  <A NAME=A06000003><B><FONT COLOR=NAVY>.method</FONT></B></A> <B><FONT COLOR=NAVY>private hidebysig static </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B>  Main()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+  {
+    <B><FONT COLOR=NAVY>.entrypoint</FONT></B>
+    // Code size       190 (0xbe)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  5
+    <B><FONT COLOR=NAVY>.locals </FONT></B><B><FONT COLOR=NAVY>init </FONT></B>(<B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt; V_0,
+             <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt; V_1)
+    IL_0000:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0001:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt;::.ctor()
+    IL_0006:  <B><FONT COLOR=NAVY>stloc.0</FONT></B>
+    IL_0007:  <B><FONT COLOR=NAVY>ldloc.0</FONT></B>
+    IL_0008:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0xb4
+    IL_000d:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0x7c8
+    IL_0012:  <B><FONT COLOR=NAVY>ldc.i4.7</FONT></B>
+    IL_0013:  <B><FONT COLOR=NAVY>ldc.i4.6</FONT></B>
+    IL_0014:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.DateTime::.ctor(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>)
+    IL_0019:  <B><FONT COLOR=NAVY>ldstr</FONT></B> "Red"
+    IL_001e:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A06000001>.ctor</A>(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>string</FONT></B>)
+    IL_0023:  <B><FONT COLOR=NAVY>callvirt</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt;::Add(!0)
+    IL_0028:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0029:  <B><FONT COLOR=NAVY>ldloc.0</FONT></B>
+    IL_002a:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0xa3
+    IL_002f:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0x7c9
+    IL_0034:  <B><FONT COLOR=NAVY>ldc.i4.7</FONT></B>
+    IL_0035:  <B><FONT COLOR=NAVY>ldc.i4.s</FONT></B> 15
+    IL_0037:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.DateTime::.ctor(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>)
+    IL_003c:  <B><FONT COLOR=NAVY>ldstr</FONT></B> "Magenta"
+    IL_0041:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A06000001>.ctor</A>(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>string</FONT></B>)
+    IL_0046:  <B><FONT COLOR=NAVY>callvirt</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt;::Add(!0)
+    IL_004b:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_004c:  <B><FONT COLOR=NAVY>ldloc.0</FONT></B>
+    IL_004d:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0xb4
+    IL_0052:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0x7c8
+    IL_0057:  <B><FONT COLOR=NAVY>ldc.i4.4</FONT></B>
+    IL_0058:  <B><FONT COLOR=NAVY>ldc.i4.s</FONT></B> 20
+    IL_005a:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.DateTime::.ctor(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>)
+    IL_005f:  <B><FONT COLOR=NAVY>ldstr</FONT></B> "Green"
+    IL_0064:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A06000001>.ctor</A>(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>string</FONT></B>)
+    IL_0069:  <B><FONT COLOR=NAVY>callvirt</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt;::Add(!0)
+    IL_006e:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_006f:  <B><FONT COLOR=NAVY>ldloc.0</FONT></B>
+    IL_0070:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0xc3
+    IL_0075:  <B><FONT COLOR=NAVY>ldc.i4</FONT></B> 0x7c9
+    IL_007a:  <B><FONT COLOR=NAVY>ldc.i4.2</FONT></B>
+    IL_007b:  <B><FONT COLOR=NAVY>ldc.i4.s</FONT></B> 10
+    IL_007d:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.DateTime::.ctor(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>int32</FONT></B>)
+    IL_0082:  <B><FONT COLOR=NAVY>ldstr</FONT></B> "Pink"
+    IL_0087:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <A HREF=#A02000002>Person</A>::<A HREF=#A06000001>.ctor</A>(<B><FONT COLOR=NAVY>int32</FONT></B>,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>valuetype </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.DateTime,
+                                                                                                                                                                                                                           <B><FONT COLOR=NAVY>string</FONT></B>)
+    IL_008c:  <B><FONT COLOR=NAVY>callvirt</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt;::Add(!0)
+    IL_0091:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0092:  <B><FONT COLOR=NAVY>ldloc.0</FONT></B>
+    IL_0093:  <B><FONT COLOR=NAVY>ldsfld</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Func`2&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>,<B><FONT COLOR=NAVY>bool</FONT></B>&gt; <A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A>::<A HREF=#A04000005>'&lt;&gt;9__0_0'</A>
+    IL_0098:  <B><FONT COLOR=NAVY>dup</FONT></B>
+    IL_0099:  <B><FONT COLOR=NAVY>brtrue.s</FONT></B> IL_00b2
+
+    IL_009b:  <B><FONT COLOR=NAVY>pop</FONT></B>
+    IL_009c:  <B><FONT COLOR=NAVY>ldsfld</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A> <A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A>::<A HREF=#A04000004>'&lt;&gt;9'</A>
+    IL_00a1:  <B><FONT COLOR=NAVY>ldftn</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>bool</FONT></B> <A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A>::<A HREF=#A06000007>'&lt;Main&gt;b__0_0'</A>(<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>)
+    IL_00a7:  <B><FONT COLOR=NAVY>newobj</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Func`2&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>,<B><FONT COLOR=NAVY>bool</FONT></B>&gt;::.ctor(<B><FONT COLOR=NAVY>object</FONT></B>,
+                                                                                                                                                                                                                                                                                                                                                                        <B><FONT COLOR=NAVY>native int</FONT></B>)
+    IL_00ac:  <B><FONT COLOR=NAVY>dup</FONT></B>
+    IL_00ad:  <B><FONT COLOR=NAVY>stsfld</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Func`2&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>,<B><FONT COLOR=NAVY>bool</FONT></B>&gt; <A HREF=#A02000003>Program</A>/<A HREF=#A02000004>'&lt;&gt;c'</A>::<A HREF=#A04000005>'&lt;&gt;9__0_0'</A>
+    IL_00b2:  <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.IEnumerable`1&lt;!!0&gt; [<A HREF=#A23000002>System.Core</A>]System.Linq.Enumerable::Where&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt;(<B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.IEnumerable`1&lt;!!0&gt;,
+                                                                                                                                                                                                                                                                                                                                                       <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Func`2&lt;!!0,<B><FONT COLOR=NAVY>bool</FONT></B>&gt;)
+    IL_00b7:  <B><FONT COLOR=NAVY>castclass</FONT></B> <B><FONT COLOR=NAVY>class </FONT></B>[<A HREF=#A23000001>mscorlib</A>]System.Collections.Generic.List`1&lt;<B><FONT COLOR=NAVY>class </FONT></B><A HREF=#A02000002>Person</A>&gt;
+    IL_00bc:  <B><FONT COLOR=NAVY>stloc.1</FONT></B>
+    IL_00bd:  <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Program::</FONT></I><I><FONT COLOR=GREEN>Main</FONT></I>
+
+  <A NAME=A06000004><B><FONT COLOR=NAVY>.method</FONT></B></A> <B><FONT COLOR=NAVY>public hidebysig specialname rtspecialname </FONT></B><B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> 
+          .ctor()<B><FONT COLOR=NAVY> cil managed</FONT></B>
+  {
+    // Code size       8 (0x8)
+    <B><FONT COLOR=NAVY>.maxstack</FONT></B>  8
+    IL_0000:  <B><FONT COLOR=NAVY>ldarg.0</FONT></B>
+    IL_0001:  <B><FONT COLOR=NAVY>call</FONT></B> <B><FONT COLOR=NAVY>instance </FONT></B><B><FONT COLOR=NAVY></FONT></B><B><FONT COLOR=NAVY>void</FONT></B> [<A HREF=#A23000001>mscorlib</A>]System.Object::.ctor()
+    IL_0006:  <B><FONT COLOR=NAVY>nop</FONT></B>
+    IL_0007:  <B><FONT COLOR=NAVY>ret</FONT></B>
+  } <I><FONT COLOR=GREEN>// end of method Program::</FONT></I><I><FONT COLOR=GREEN>.ctor</FONT></I>
+
+} <I><FONT COLOR=GREEN>// end of class Program</FONT></I>
+
+
+<I><FONT COLOR=GREEN>// =============================================================</FONT></I>
+
+<I><FONT COLOR=GREEN>// *********** DISASSEMBLY COMPLETE ***********************</FONT></I>
+<I><FONT COLOR=GREEN>// WARNING: Created Win32 resource file linq-person.res</FONT></I>
+</PRE>
+</BODY>
+</HTML>
